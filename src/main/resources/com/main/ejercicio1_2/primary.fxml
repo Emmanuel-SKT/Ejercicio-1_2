@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.ejercicio1_2.PrimaryController">
+   <children>
+      <Label layoutX="30.0" layoutY="28.0" text="Dinero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDinero" layoutX="100.0" layoutY="25.0" prefHeight="30.0" prefWidth="120.0" />
+      <Button fx:id="btnLimpiar" layoutX="230.0" layoutY="25.0" onAction="#btnLimpiarOnAction" prefHeight="30.0" prefWidth="35.0" text="X" />
+      <Button fx:id="btnDesglosar" layoutX="280.0" layoutY="25.0" onAction="#btnDesglosarOnAction" prefHeight="30.0" prefWidth="100.0" text="Desglosar" />
+      
+      <TextArea fx:id="txtNombres" editable="false" layoutX="30.0" layoutY="75.0" prefHeight="230.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      
+      <TextArea fx:id="txtCantidades" editable="false" layoutX="210.0" layoutY="75.0" prefHeight="230.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>
